@@ -1,7 +1,7 @@
 # PWP SPRING 2020
 # PROJECT NAME
 # Group information
-* Student 1. Name and email
+* Anssi Uistola, anssiuistola@gmail.com
 * Student 2. Name and email
 * Student 3. Name and email
 
