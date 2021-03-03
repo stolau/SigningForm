@@ -1,10 +1,12 @@
-from flask import Flask, request
-from flask_sqlalchemy import SQLAlchemy
+from app import db
 
-app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test.db"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-db = SQLAlchemy(app)
+
+
+attendances = db.Table(
+    "attendance",
+    db.Column("userID", db.String, db.ForeignKey("user.id"), primary_key=True),
+    db.Column("formID", db.Integer, db.ForeingKey("form.id"), primary_key=True)
+)
 
 
 class User(db.Model):
@@ -15,8 +17,12 @@ class User(db.Model):
     email = db.Column(db.String(35), nullable=False),
     phone = db.Column(db.String(35), nullable=True)
 
+    attendances = db.relationship("Form", secondary=attendances, back_populates="users")
+
 
 class Form(db.Model):
     id = db.Column(db.Integer, primary_key=True),
     name = db.Column(db.String(15), unique=True, nullable=False),
     sitepath = db.Column(db.String(21), unique=True, nullable=False)
+
+    users = db.relationship("User", secondary=attendances, back_populates="attendances")
