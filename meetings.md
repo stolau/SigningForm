@@ -4,7 +4,7 @@
 * **DATE: 16.2.2021**
 * **ASSISTANTS: Marta Cortes Orduna**
 
-### Minutes 10.10 - 10.40 (roughly)
+### Minutes 10:10 - 10:40 (roughly)
 *Summary of what was discussed during the meeting*
 
 We went through the RESTful API description. The assistant questioned the sufficiency of our project and encouraged us to clarify the description. 
@@ -23,14 +23,20 @@ We went through the RESTful API description. The assistant questioned the suffic
 *ONLY USED BY COURSE STAFF: Additional comments from the course staff*
 
 ## Meeting 2.
-* **DATE:**
-* **ASSISTANTS:**
+* **DATE: 3.3.2021**
+* **ASSISTANTS: Mika Oja**
 
-### Minutes
+### Minutes 9:30 - 9:40
 *Summary of what was discussed during the meeting*
+
+Implementation missing, discussed about database design.
 
 ### Action points
 *List here the actions points discussed with assistants*
+
+* Implementation
+* Form table has a collection of fields
+  - Field(type, prompt, order...)
 
 
 ### Comments from staff

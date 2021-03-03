@@ -1,7 +1,6 @@
 from app import db
 
 
-
 attendances = db.Table(
     "attendance",
     db.Column("userID", db.String, db.ForeignKey("user.id"), primary_key=True),
